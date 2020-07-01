@@ -74,7 +74,9 @@ class InvoicesController < CommonsController
       format.pdf do
         pdf = @invoice.pdf(html)
         send_data(pdf,
-          :filename    => "#{@invoice}.pdf",
+                  :filename    => "#{([@invoice.to_s, + @invoice.issue_date.to_s(:db), Settings.find_by_var('company_name').value.to_s.gsub('č', 'c')].join('_')).gsub(/\s+/, '_')}.pdf",
+
+                  # :filename    => "#{@invoice}.pdf",
           :disposition => 'attachment'
         )
       end

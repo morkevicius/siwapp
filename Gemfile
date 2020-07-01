@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby "2.5.3"
+ruby "2.5.5"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.2.1.1'
@@ -44,6 +44,7 @@ end
 gem 'web-console', group: :development
 
 group :test do
+  #https://github.com/thoughtbot/capybara-webkit/wiki/Installing-Qt-and-compiling-capybara-webkit#debian--ubuntu
   gem 'capybara-webkit'
   gem 'selenium-webdriver'
   gem 'database_cleaner'
@@ -64,7 +65,8 @@ gem 'jquery-ui-rails'
 gem 'js-routes'
 gem 'material_icons'
 gem 'money'
-gem 'pg'
+gem 'mysql2', '0.4.8'
+
 gem 'pry-rails', group: :development
 gem 'puma'
 gem 'rails_12factor', group: :production
@@ -84,3 +86,5 @@ gem 'http'
 # for translation
 gem 'route_translator'
 gem 'dotenv-rails', groups: [:development, :test]
+#gem "therubyracer"
+gem 'mini_racer'
