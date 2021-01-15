@@ -65,7 +65,9 @@ gem 'jquery-ui-rails'
 gem 'js-routes'
 gem 'material_icons'
 gem 'money'
-gem 'mysql2', '0.4.8'
+#gem 'mysql2', '0.4.8'
+gem 'mysql2', '~> 0.5'
+
 
 gem 'pry-rails', group: :development
 gem 'puma'

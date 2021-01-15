@@ -181,7 +181,7 @@ GEM
       i18n (>= 0.6.4, <= 2)
     msgpack (1.2.4)
     multi_json (1.13.1)
-    mysql2 (0.4.8)
+    mysql2 (0.5.3)
     nio4r (2.3.1)
     nokogiri (1.8.5)
       mini_portile2 (~> 2.3.0)
@@ -352,7 +352,7 @@ DEPENDENCIES
   material_icons
   mini_racer
   money
-  mysql2 (= 0.4.8)
+  mysql2 (~> 0.5)
   paranoia
   pry-rails
   puma
